@@ -20,13 +20,32 @@
     --light-grey: #CFCFCF;
     --light-grey-blue: #ECF2F8;
 
+    /* Additional Colors */
+    --daniel-purple: #A775F1;
+    --patrick-purple: #733FC8;
+
     --font: "Barlow Semi Condensed";
     --font-size: 16px;
 }
 
 /* 2. Typography Styles
 ======================================== */
+h1, h2, p {
+    font-family: var(--font);
+    color: #fff;
+}
 
+h1, .testimonial {
+    font-size: 0.8125em;
+}
+
+h2 {
+    font-size: 0.6875em;
+}
+
+.highlight {
+    font-size: 1.25em;
+}
 
 /* 3. Structure Styles
 ======================================== */
