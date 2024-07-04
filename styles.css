@@ -55,6 +55,21 @@ h2 {
 ======================================== */
 /* Site Navigation */
 /* Site Footer */
+footer {
+    padding: 55px 0 15px 0;
+    color: var(--black-blue);
+}  
+
+footer a {
+    color: var(--violet);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: var(--gray-blue);
+    font-weight: bold;
+}
 
 /* 5. Component Styles
 ======================================== */
