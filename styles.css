@@ -10,7 +10,17 @@
 
 /* 1. Global Styles
 ======================================== */
+* {
+    /* Primary */
+    --violet: #883FC8;
+    --gray-blue: #48556A;
+    --black-blue: #19202D;
 
+    /* Neutral */
+    --light-grey: hsl(0, 0%, 81%);
+    --light-grey-blue: hsl(210, 46%, 95%);
+
+}
 
 /* 2. Typography Styles
 ======================================== */
