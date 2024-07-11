@@ -47,6 +47,14 @@ h2 {
     font-size: 1.25em;
 }
 
+#testimonial {
+    line-height: 18px;
+}
+
+#kira h1, #kira h2, #kira p, #jeanette h1, #jeanette h2, #jeanette p {
+    color: var(--gray-blue);
+}
+
 /* 3. Structure Styles
 ======================================== */
 
