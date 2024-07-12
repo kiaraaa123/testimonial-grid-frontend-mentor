@@ -51,25 +51,14 @@ h1, h2, .testimonial {
     font-size: 1.25em;
     font-weight: 600;
     z-index: 1;
-    width: 191px;
-}
-
-#daniel .highlight, #patrick .highlight {
-    width: 476px;
 }
 
 .testimonial {
     line-height: 18px;
-    width: 191px;
 }
 
 #patrick .testimonial {
     text-align: center;
-    width: 476px;
-}
-
-#daniel .testimonial {
-    width: 476px;
 }
 
 #kira h1, #kira h2, #kira p, #jeanette h1, #jeanette h2, #jeanette p {
@@ -85,7 +74,7 @@ h1, h2, .testimonial {
 /* Site Navigation */
 /* Site Footer */
 footer {
-    padding: 55px 0 15px 0;
+    padding: 7em 0 1em 0;
     color: var(--black-blue);
 }  
 
@@ -104,22 +93,24 @@ footer a:hover {
 ======================================== */
 .testimonials {
     display: grid;
-    grid-template-columns: repeat(4, 15.9375em);
-    grid-template-rows: 17.625em, 16.625em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-content: center;
-    gap: 1.5625em
+    gap: 1.5625em;
+    margin: 0 65px;
 }
 
 .card {
     border-radius: 8px;
     padding: 1.5625em 2.1875em;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
 }
 
 .header {
     display: grid;
-    grid-template-columns: 28px 91px;
-    grid-template-rows: repeat(2, 14px);
-    column-gap: 15px;
+    grid-template-columns: 1.75em 5.6875em;
+    grid-template-rows: repeat(2, 0.875em);
+    column-gap: 0.9375em;
     align-items: center;
 }
 
@@ -136,6 +127,8 @@ footer a:hover {
     grid-column: 1 / 3;
     background-color: var(--violet);
     z-index: -2;
+    background: url(./images/bg-pattern-quotation.svg) var(--violet) top right no-repeat;
+    background-position-x: 85%;
 }
 
 #jonathan {
@@ -176,21 +169,29 @@ footer a:hover {
     border-color: var(--daniel-purple);
 }
 
-#quotes {
-    width: 104px;
-    height: 102px;
-    position: absolute;
-    top: 175px;
-    left: 500px;
-    z-index: -1;
-}
-
 /* 6. Page Styles
 ======================================== */
 body {
     background-color: var(--light-grey-blue);
-    padding-top: 10.25em;
+    padding-top: 10%;
 }
 
 /* 7. Media Queries
 ======================================== */
+@media screen and ( max-width: 1120px ) {
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    #patrick .testimonial {
+        text-align: left;
+    }
+  }
